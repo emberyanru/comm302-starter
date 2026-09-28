@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets Hub",
+  "description": "Comprehensive real-time global markets overview featuring indices, active stocks, world benchmarks, crypto, and commodities with interactive charts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, Ubuntu, sans-serif;
+    color: #131722;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.tv-btn-gradient {
+  background: linear-gradient(135deg, #2962FF 0%, #7B1FA2 100%);
+}
+
+.tv-btn-gradient:hover {
+  opacity: 0.94;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes flashGreen {
+  0% { background-color: rgba(8, 153, 129, 0.25); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flashRed {
+  0% { background-color: rgba(242, 54, 69, 0.25); }
+  100% { background-color: transparent; }
+}
+
+.flash-up {
+  animation: flashGreen 1s ease-out;
+}
+
+.flash-down {
+  animation: flashRed 1s ease-out;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-\[marquee_35s_linear_infinite\] {
+  animation: marquee 35s linear infinite;
+}
